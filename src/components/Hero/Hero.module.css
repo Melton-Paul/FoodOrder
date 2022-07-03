@@ -1,0 +1,32 @@
+.hero {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 100%;
+  margin-top: -7rem;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 85%, 100% 0%);
+  height: 400px;
+  transform: scale(1.2);
+}
+
+.hero-heading {
+  position: absolute;
+  color: white;
+  background: rgb(65, 67, 70);
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.hero-heading h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.hero-heading p {
+  font-size: 1.6rem;
+  opacity: 0.9;
+}

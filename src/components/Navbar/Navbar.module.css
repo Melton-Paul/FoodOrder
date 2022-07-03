@@ -1,0 +1,32 @@
+.navbar {
+  background: rgb(172, 36, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+  color: white;
+  width: 100%;
+}
+
+.navbar-button {
+  border-radius: 20px;
+  background-color: maroon;
+  padding: 1rem 2rem;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.navbar-button:hover {
+  background: rgba(129, 12, 12, 0.8);
+  color: whitesmoke;
+}
+
+.navbar-button__cart {
+  background: lightcoral;
+  padding: 0.2rem 1rem;
+  font-weight: bold;
+  border-radius: 25%;
+}

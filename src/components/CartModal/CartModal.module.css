@@ -1,0 +1,38 @@
+.cartModal {
+  position: absolute;
+  z-index: 99999999;
+  width: 900px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.cartModal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cartModal-header {
+  background: maroon;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cartModal-header .btn {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.cartModal-header .btn:hover {
+  opacity: 1;
+}
+
+.cartModal-body {
+  background-color: white;
+}
