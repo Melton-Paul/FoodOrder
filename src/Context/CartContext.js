@@ -33,9 +33,14 @@ export default function CartContextProvider(props) {
     setTotalCost(total);
   }, [cart]);
 
+  function cartReset() {
+    setCart([]);
+    setTotalCost(0);
+  }
+
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, cartOpen, setCartOpen, totalCost }}
+      value={{ cart, addToCart, cartOpen, setCartOpen, totalCost, cartReset }}
     >
       {props.children}
     </CartContext.Provider>

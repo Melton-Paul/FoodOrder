@@ -6,16 +6,6 @@ import Checkout from "./Checkout";
 
 export default function CartModal(props) {
   const context = React.useContext(CartContext);
-  const [loading, setLoading] = React.useState(false);
-
-  function submitOrder(userData) {
-    console.log(userData);
-    console.log(context.cart);
-    fetch("https://react-http-f2651-default-rtdb.firebaseio.com/orders.json", {
-      method: "POST",
-      body: JSON.stringify({ user: userData, order: context.cart }),
-    });
-  }
 
   return (
     <>
@@ -31,7 +21,7 @@ export default function CartModal(props) {
           </p>
         </div>
         <div className={styles["cartModal-body"]}>
-          <Checkout submitOrder={submitOrder} />
+          <Checkout />
         </div>
       </Card>
     </>
